@@ -1,0 +1,216 @@
+body {
+  color: black !important;
+}
+
+/*-----------navigations--------------*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f1f1f1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+}
+
+.logo {
+  color: #ff4800;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+#click {
+  display: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin: 16px 12px 0px 12px;
+}
+
+nav ul li:hover {
+  color: orangered;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.dropdown label {
+  cursor: pointer;
+}
+
+nav ul li:nth-child(1) a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li:nth-child(1) a:hover {
+  text-decoration: underline;
+  color: orangered;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.buyNow {
+  background-color: rgba(255, 255, 255, 0);
+  border: orangered 2px solid;
+  border-radius: 0px 30px 30px 30px;
+}
+
+.buyNow a {
+  text-decoration: none;
+  color: black;
+  padding: 14px;
+}
+
+.buyNow:hover {
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.buyNow a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*-----------dropdowns-------------*/
+.menu-btn i {
+  font-size: 30px;
+  margin-top: 5px;
+  padding: 10px 20px;
+  border: orangered 2px solid;
+  border-radius: 0px 20px 20px 20px;
+  display: none;
+}
+
+.dropdown {
+  position: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(19, 19, 19, 0.267);
+          box-shadow: 0px 8px 16px 0px rgba(19, 19, 19, 0.267);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block ruby;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  border-top: 1px solid orangered;
+  padding: 12px;
+  text-align: center;
+}
+
+.dropdown-content a:nth-child(1) {
+  border: none;
+}
+
+.dropdown-content a:hover {
+  color: #ff4800;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#drop1 {
+  display: none;
+}
+
+#drop2 {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  nav ul {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    background: orangered;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+    left: -100%;
+  }
+  nav ul li {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  nav ul li:nth-child(1) a:hover {
+    text-decoration: underline;
+    color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav ul li:hover {
+    color: white !important;
+    text-decoration: underline;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  #drop1:checked ~ .dropdown-content {
+    display: block;
+  }
+  #drop2:checked ~ .dropdown-content {
+    display: block;
+  }
+  .buyNow {
+    background-color: rgba(255, 255, 255, 0);
+    border: white 2px solid;
+    border-radius: 0px 30px 30px 30px;
+  }
+  .buyNow:hover {
+    text-decoration: none;
+    background-color: white;
+    color: orangered;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .buyNow a:hover {
+    text-decoration: none;
+    color: orangered;
+  }
+  .menu-btn i {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #click {
+    display: none;
+  }
+  #click:checked ~ ul {
+    left: 0%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+    padding: 0px 2px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
