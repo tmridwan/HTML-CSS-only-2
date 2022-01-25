@@ -1,6 +1,9 @@
 body{
-  color: black !important;
+  color: black;
+  margin: 0px;
+  font-family: Lucida Sans Unicode !important;
 }
+
 
 /*-----------navigations--------------*/
 
@@ -31,7 +34,7 @@ nav ul{
 }
 
 nav ul li{
-  margin: 16px 12px 0px 12px;
+  margin: 0px 12px 0px 12px;
 }
 
 nav ul li:hover{
@@ -60,12 +63,15 @@ nav ul li:nth-child(1) a:hover{
   background-color: rgba(255, 255, 255, 0);
   border: orangered 2px solid;
   border-radius: 0px 30px 30px 30px;
+  padding: 5px 0px 5px 0px;
+  transition: 1s;
 }
 
 .buyNow a{
+  font-size: 17px;
   text-decoration: none;
   color: black;
-  padding: 14px;
+  padding: 0px 20px 0px 20px;
 }
 
 .buyNow:hover{
@@ -149,6 +155,7 @@ nav ul li:nth-child(1) a:hover{
     text-align: center;
     padding-left: 0px;
     left: -100%;
+    transition: 0.5s;
   }
 
   nav ul li{
@@ -185,9 +192,11 @@ nav ul li:nth-child(1) a:hover{
     background-color: rgba(255, 255, 255, 0);
     border: rgb(255, 255, 255) 2px solid;
     border-radius: 0px 30px 30px 30px;
+    font-size: 20px;
   }
 
   .buyNow a{
+    font-size: 30px;
     color: white;
   }
 
@@ -195,6 +204,8 @@ nav ul li:nth-child(1) a:hover{
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: orangered;
+    box-shadow: 0px 16px 16px 0px rgb(255, 255, 255);
+    border: 2px orangered solid;
     transition: 1s;;
   }
   
@@ -220,5 +231,322 @@ nav ul li:nth-child(1) a:hover{
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
     padding: 0px 2px;
+  }
+}
+
+/*--------------nav ends--------------*/
+
+
+
+/*--------------hOME--------------*/
+
+
+
+.home1{
+  width: 40%;
+  display: inline-block;
+}
+
+@media (max-width:800px) {
+  .home1{
+    width: 100%;
+  }
+}
+
+.home1 h1{
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.leftpad{
+  padding-left: 20px;
+}
+
+.home1_1 i{
+  font-size: 80px;
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+
+.home1_1{
+  display: inline-block;
+}
+
+.home1_2{
+  padding-left: 20px;
+  display: inline-block;
+  width: 70%;
+}
+
+@media (max-width:1100px) {
+  .home1 h1{
+    font-size: 60px;
+  }
+  .home1_2 h2{
+    font-size: 20px;
+  }
+  .home1_2 p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:400px){
+  .home1 h1{
+    font-size: 40px;
+  }
+}
+
+.book{
+  background-color: linear-gradient(90deg, #bac012 0%, #00bfc6 100%);
+  animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+  color: white;
+  font-size: 25px;
+  background-color: orangered;
+  padding: 30px 0px;
+  border: 0px;
+  border-radius: 0px 50px 50px 50px;
+  display: block;
+  float: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 1s;
+}
+
+.book a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px;
+}
+
+.book:hover{
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: orangered;
+  border: 2px solid orangered;
+  box-shadow: 0px 16px 16px 0px orangered;
+  transition: 1s;
+}
+
+.book a:hover{
+  text-decoration: none;
+  color: orangered;
+}
+
+.home2{
+  background: url("../img/pet_photo_1.jpg") no-repeat;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+  float: right;
+}
+
+.home2 img{
+  width: 100%;
+}
+
+@media (max-width:800px) {
+.home2{
+  width: 100%;
+  float: right;
+  margin: 0 auto;
+  display: block;
+} 
+
+.home2 img{
+   width: 100%;
+}
+}
+
+
+
+/*--------------Features---------------*/
+
+
+
+
+#sec2 h2{
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.oneThird{
+  width: 32%;
+  display: inline-block;
+}
+
+
+#sec2{
+  margin-left: 20px;
+}
+
+.greyBack1{
+  background-color: #e7e7e7;
+  width: 260px;
+  float: none;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 33% 59% 32% 64% / 41% 60% 56% 59%;
+  transition: 0.3s ease-in-out;
+}
+
+.greyBack1:hover{
+  border-radius: 49% 59% 49% 68% / 39% 71% 48% 66%;
+}
+
+.para1st{
+  color: #ffffff;
+  background-color: #77c04d;
+  font-size: 30px;
+  width: 160px;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 80px;
+  border-radius: 31% 71% 25% 72% / 31% 60% 29% 61%;
+  transition: 0.3s ease-in-out;
+}
+
+.para1st:hover{
+  border-radius: 51% 27% 63% 22% / 41% 26% 56% 32%;
+  padding-bottom: -40px;
+}
+
+.para1st p{
+  margin: 5px;
+}
+
+.para1st a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+
+//2nd para---------------------
+
+
+
+.greyBack2{
+  background-color: #e7e7e7;
+  width: 260px;
+  float: none;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 33% 59% 32% 64% / 41% 60% 56% 59%;
+  transition: 0.3s ease-in-out;
+}
+
+.greyBack2:hover{
+  border-radius: 51% 27% 63% 22% / 41% 26% 56% 32%;
+}
+
+.para2nd{
+  color: #ffffff;
+  background-color: #fcbc4d;
+  font-size: 30px;
+  padding: 50px;
+  padding-bottom: 80px;
+  width: 160px;
+  text-align: center;
+  border-radius: 51% 27% 63% 22% / 41% 26% 56% 32%;
+  transition: 0.3s ease-in-out;
+}
+
+.para2nd:hover{
+  border-radius: 33% 59% 32% 64% / 41% 60% 56% 59%;
+  padding-bottom: -40px;
+}
+
+.para2nd p{
+  margin: 5px;
+}
+
+.para2nd a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+
+
+//3rd para---------------------
+
+
+
+.greyBack3{
+  background-color: #e7e7e7;
+  width: 260px;
+  float: none;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 33% 59% 32% 64% / 41% 60% 56% 59%;
+  transition: 0.3s ease-in-out;
+}
+
+.greyBack3:hover{
+  border-radius: 31% 60% 29% 61% / 31% 71% 25% 72%;
+}
+
+.para3rd{
+  color: #ffffff;
+  background-color: #f06538;
+  font-size: 30px;
+  padding: 50px;
+  padding-bottom: 80px;
+  width: 160px;
+  text-align: center;
+  border-radius: 31% 60% 29% 61% / 31% 71% 25% 72%;
+  transition: 0.3s ease-in-out;
+}
+
+.para3rd:hover{
+  border-radius: 51% 27% 63% 22% / 41% 26% 56% 32%;
+  padding-bottom: -40px;
+}
+
+.para3rd p{
+  margin: 5px;
+}
+
+.para3rd a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+
+
+//screen--------------
+
+
+
+@media (max-width:870px) {
+  .oneThird{
+    width: 49%;
+  }
+
+  .middel {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .greyBack1{
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width:870px) {
+  .oneThird{
+    width: 100%;
+  }
+  .middel{
+
   }
 }
