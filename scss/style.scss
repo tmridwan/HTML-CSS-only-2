@@ -1,25 +1,30 @@
 body{
   color: black;
   margin: 0px;
-  font-family: Lucida Sans Unicode !important;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 
 /*-----------navigations--------------*/
 
+
+
 nav{
   display: flex;
-  background-color: rgb(241, 241, 241);
+  background-color: rgba(241, 241, 241, 0.534);
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 70px;
+  padding-top: 15px;
+  height: 80px;
+  width: 100%;
+  position: fixed;
 }
 
 
 .logo{
   color: rgb(255, 72, 0);
   font-size: 45px;
+  padding-top: 8px;
+  padding-left: 10px;
   cursor: pointer;
 }
 
@@ -77,6 +82,7 @@ nav ul li:nth-child(1) a:hover{
 .buyNow:hover{
   text-decoration: none;
   background-color: orangered;
+  box-shadow: 0px 8px 16px 0px orangered;
   color: white;
   transition: 1s;
 }
@@ -118,7 +124,8 @@ nav ul li:nth-child(1) a:hover{
   text-decoration: none;
   font-size: 17px;
   border-top: 1px solid orangered;
-  padding: 12px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   text-align: center;
 }
 
@@ -245,6 +252,7 @@ nav ul li:nth-child(1) a:hover{
 .home1{
   width: 40%;
   display: inline-block;
+  margin-top: 50px;
 }
 
 @media (max-width:800px) {
@@ -376,6 +384,7 @@ nav ul li:nth-child(1) a:hover{
 
 .oneThird{
   width: 32%;
+  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -542,11 +551,942 @@ nav ul li:nth-child(1) a:hover{
   }
 }
 
-@media (max-width:870px) {
+@media (max-width:590px) {
   .oneThird{
     width: 100%;
   }
   .middel{
-
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
+}
+
+
+
+//happy-------------------------------
+
+
+
+
+#happy{
+  display: inline-block;
+}
+
+.firstHalf{
+  background: url("../img/dogo.png") no-repeat;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+
+.secondHalf h1{
+  font-size: 70px;
+}
+
+.secondHalf h1 c{
+  color: orangered;
+}
+
+@media (max-width:1062px) {
+  .firstHalf{
+    width: 100%;
+  }
+  .secondHalf{
+    text-align: center;
+  }
+}
+
+@media (max-width:400px) {
+  .secondHalf h1{
+    font-size: 50px;
+  }
+}
+
+
+
+
+//ase------------------------------------
+
+
+#ase{
+  margin: 100px;
+}
+
+.ase{
+  display: contents;
+  float: none;
+  margin: auto;
+}
+
+.aseContent{
+  background-color: rgb(233, 232, 232);
+  width: 15%;
+  min-width: 120px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media (max-width:1233px){
+  .aseContent{
+    width: 30%;
+  }
+}
+
+@media (max-width:710px) {
+  .aseContent{
+    width: 70%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.aseContent .iconAse{
+  font-size: 80px;
+  color: #77c04d;
+}
+
+.aseContent h2{
+  font-size: 25px;
+}
+
+.aseContent p{
+  color: rgb(102, 102, 102);
+}
+
+.aseContent a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: orangered;
+  transition: 0.3s;
+}
+
+.aseContent a:hover{
+  color: rgb(59, 59, 59);
+}
+
+//Activities---------------------
+
+
+
+#activities{
+  margin-left: 30px;
+}
+
+.fourtyPers{
+  width: 40%;
+  display: inline-block;
+}
+
+.fourtyPers h2{
+  font-size: 60px;
+}
+
+.fourtyPers h5{
+  display: inline-block;
+  font-size: 25px;
+  margin: 20px;
+  margin-right: 20px;
+}
+
+.viewMore{
+  animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+  color: #ff4500;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 20px 0px;
+  border: 2px solid orangered;
+  border-radius: 0px 50px 50px 50px;
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+  margin: 10px;
+  transition: 1s;
+}
+
+.viewMore a{
+  text-decoration: none;
+  color: orangered;
+  padding: 20px 30px;
+}
+
+.viewMore:hover{
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  box-shadow: 0px 16px 16px 0px orangered;
+  transition: 1s;
+}
+
+.viewMore a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.book2{
+  background-color: linear-gradient(90deg, #bac012 0%, #00bfc6 100%);
+  animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: orangered;
+  border: 2px solid orangered;
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 0px 50px 50px 50px;
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+  margin: 10px;
+  transition: 1s;
+}
+
+.book2 a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 40px;
+}
+
+.book2:hover{
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: orangered;
+  border: 2px solid orangered;
+  box-shadow: 0px 16px 16px 0px orangered;
+  transition: 1s;
+}
+
+.book2 a:hover{
+  text-decoration: none;
+  color: orangered;
+}
+
+@media (max-width:400px) {
+  .fourtyPers h2{
+    font-size: 40px;
+  }
+  
+  .fourtyPers h5{
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+.sixtyPers{
+  background: url("../img/cat2.png") no-repeat right;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+  float: right;
+}
+
+@media (max-width:960px) {
+  .fourtyPers{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  .sixtyPers{
+    width: 100%;
+    float: right;
+  }
+}
+
+
+
+// cats & dogs--------------------------
+
+#catsNdogs{
+  margin: 30px;
+}
+
+.dogs{
+  width: 48%;
+  display: inline-block;
+}
+
+.dogs h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.dogs p{
+  font-weight: lighter;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.dogs i{
+  color: #77c04d;
+}
+
+
+.cats{
+  width: 48%;
+  display: inline-block;
+}
+
+.cats h1{
+  color: orangered;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.cats p{
+  font-weight: lighter;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.cats i{
+  color: #77c04d;
+}
+
+
+@media (max-width:767px) {
+  .dogs{
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+  }
+
+  .cats{
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+  }
+}
+
+
+// dogs & cats Ends--------------------------------
+
+
+
+//hamstar------------------------------------------
+
+
+#hamstar{
+  display: block;
+}
+
+.ham1{
+  background: url("../img/hamstar.png") no-repeat left;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+
+.ham2{
+  margin-top: 50px;
+  padding-top: 120px;
+}
+
+.ham2 i{
+  font-size: 80px;
+  color: orangered;
+}
+
+.ham2 p:nth-child(2) {
+  font-size: 30px;
+}
+
+.ham2 p:nth-child(3) {
+  color: orangered;
+}
+
+@media (max-width:1062px) {
+  .ham1{
+    width: 100%;
+  }
+  .ham2{
+    margin-left: 30px;
+  }
+}
+  
+@media (max-width:400px) {
+  .secondHalf h1{
+    font-size: 50px;
+  }
+}
+
+
+// packages------------------------------
+
+
+#package{
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+
+
+//one fourth----------------------------
+
+
+.oneFourth{
+  display: inline-block;
+  width: 20%;
+}
+
+.oneFourth p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bolder;
+  color: orangered;
+}
+
+.oneFourth h2 {
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 0;
+  line-height: 5rem;
+}
+
+.oneFourth button{
+  background-color: orangered;
+  border: 2px solid white;
+  border-radius: 0px 50px 50px 50px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.oneFourth button a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+}
+
+.oneFourth button a:hover{
+  color: orangered;
+}
+
+.oneFourth button:hover{
+  background-color: white;
+  border: 2px solid orangered;
+  box-shadow: 0px 16px 16px 0px orangered;
+}
+
+
+
+//three fourth-------------------------------
+
+
+
+.threeFourth{
+  width: 78%;
+  float: right;
+  display: inline-block;
+}
+
+.thirtyThree{
+  width: 27%;
+  min-width: 195px;
+  color: black;
+  background-color: rgb(236, 236, 236);
+  border-radius: 20px;
+  padding: 20px;
+  text-decoration: none;
+  float: none;
+  margin: 0 auto;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.thirtyThree:hover{
+  background-color: orangered;
+  color: white !important;
+  font-size: percentage($number: 4);
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.pet{
+  font-size: 25px;
+}
+
+.thirtyThree h2{
+  font-size: 60px;
+  margin: 0;
+}
+
+.thirtyThree .fa-home{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.table{
+  color: rgb(82, 82, 82);
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.table i{
+  float: right;
+  color: #77c04d;
+}
+
+.justify p{
+  display: inline-block;
+}
+
+@media (max-width:991px) {
+  #package{
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .oneFourth{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .threeFourth{
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .thirtyThree{
+    width: 50%;
+    margin-top: 30px;
+    display: block;
+  }
+}
+
+
+
+//checkin times------------------------
+
+
+
+
+#checkin{
+  margin-left: 30px;
+}
+
+.checkin1{
+  width: 40%;
+  display: inline-block;
+}
+
+.checkin1 h1{
+  font-size: 60px;
+}
+
+.checkin1 i{
+  display: ruby-text;
+  font-size: 60px;
+  color: #77c04d;
+}
+
+.time div{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.time div h2{
+  color: orangered;
+  font-size: 30px;
+}
+
+.time div p{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.checkin2{
+  background: url("../img/checkin.png") no-repeat right;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+  float: right;
+}
+
+@media (max-width:960px) {
+  .checkin1{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  .checkin2{
+    width: 100%;
+    float: right;
+  }
+}
+
+//checkin ends--------------------------------
+
+
+//dogs care-----------------------------------
+
+
+
+#dogsCare{
+  display: block;
+}
+
+.dogsCare1{
+  background: url("../img/dogo.png") no-repeat left;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+
+.dogsCare2{
+  width: 38%;
+  display: inline-block;
+  margin-top: 50px;
+  padding-top: 120px;
+}
+
+.dogsCare2 h1{
+  font-size: 40px;
+}
+
+.dogsCare2 c{
+  color: orangered;
+}
+
+.boardingBox{
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.boardingBox:hover{
+  cursor: pointer;
+}
+
+.boardingBox i:nth-child(1){
+  background-color: #77c04d;
+  border: 1px solid rgb(177, 177, 177);
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.boardingBox p{
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.boardingBox i:nth-child(3) {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 10px;
+  float: right;
+  margin-top: 12px;
+}
+
+
+@media (max-width:1128px) {
+  .dogsCare1{
+    width: 100%;
+  }
+  .dogsCare2{
+    margin-left: 30px;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+  }
+}
+
+
+
+
+//catsCare------------------------
+
+
+
+#catsCare{
+  display: flex;
+  width: 100%;
+}
+
+.catsCare1{
+  width: 38%;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-top: 120px;
+}
+
+.catsCare1 h1{
+  font-size: 40px;
+}
+
+.catsCare1 c{
+  color: orangered;
+}
+
+.catsCare2{
+  background: url("../img/pet_photo.jpg") no-repeat right;
+  background-size: contain;
+  min-height: 660px;
+  width: 60%;
+  display: inline-block;
+}
+
+
+@media (max-width:1128px) {
+  #catsCare{
+    display: block;
+  }
+
+  .catsCare1{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  .catsCare2{
+    width: 100%;
+  }
+
+}
+
+
+
+
+//OFF-------------------------------
+
+
+
+
+#off{
+  display: inline-block;
+  margin-top: 80px;
+}
+
+.off{
+  width: 90%;
+  background-color: #fcbc4d;
+  border-radius: 0px 50px 50px 50px;
+  float: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.offWriting{
+  display: inline-block;
+  width: 32%;
+  margin-left: 20px;
+}
+
+.offWriting p{
+  font-size: 60px;
+}
+
+.offWriting p c{
+  color: white;
+}
+
+.offImg{
+  display: ruby-text-container;
+  width: 32%;
+}
+
+.offImg img{
+  width: 100%;
+  position: relative;
+  bottom: -96px;
+}
+
+.offBook{
+  display: inline-block;
+  width: 32%;
+}
+
+@media (max-width:942px) {
+
+  #off{
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .off{
+    width: 600px;
+  }
+
+  .offWriting{
+    width: 100%;
+  }
+
+  .offImg{
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .offImg img{
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .offBook{
+    width: 100%;
+  }
+}
+
+@media (max-width:660px) {
+  .off{
+    width: 90%;
+  }
+}
+
+@media (max-width:530px) {
+  .offWriting p c{
+    display: block;
+  }
+}
+
+
+
+
+
+//dogs care-----------------------------------
+
+
+
+#contact{
+  display: block;
+  margin-top: 50px;
+}
+
+.contact1{
+  width: 50%;
+  display: inline-block;
+}
+
+.contact1 img{
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  object-fit: cover;
+  float: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.contact2{
+  width: 38%;
+  display: inline-block;
+  background-color: rgb(243, 243, 243);
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.contact2 p:nth-child(1){
+  color: orangered;
+  font-size: 25px;
+}
+
+.contact2 p:nth-child(2) {
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.contact2 select{
+  display: block;
+  padding: 18px 25px;
+  width: 100%;
+  font-size: 18px;
+  background-color: white;
+  border: 0px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.contact2 input{
+  display: block;
+  padding: 18px 25px;
+  width: 90%;
+  font-size: 18px;
+  background-color: white;
+  border: 0px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width:1020px) {
+  .contact1{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contact2{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width:530px) {
+  .contact1 img{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+
+
+// Footer-------------------
+
+
+#footer{
+  background-color: orangered;
+  height: 80px;
+}
+
+.footer p{
+  color: white;
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
 }
