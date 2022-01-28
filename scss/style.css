@@ -238,7 +238,29 @@ nav ul li:nth-child(1) a:hover {
 }
 
 /*--------------nav ends--------------*/
+.topButton {
+  border: 2px solid orangered;
+  border-radius: 20px;
+  background-color: #eeeeee;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.topButton .far {
+  font-size: 30px;
+  padding: 10px;
+  color: orangered;
+}
+
 /*--------------hOME--------------*/
+#home {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .home1 {
   width: 40%;
   display: inline-block;

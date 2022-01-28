@@ -245,9 +245,37 @@ nav ul li:nth-child(1) a:hover{
 
 
 
+
+// topbutton------------------------------
+
+
+
+.topButton{
+  border: 2px solid orangered;
+  border-radius: 20px;
+  background-color: rgb(238, 238, 238);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: 1s;
+}
+
+.topButton .far{
+  font-size: 30px;
+  padding: 10px;
+  color: orangered;
+}
+
+
+
+
 /*--------------hOME--------------*/
 
 
+
+#home{
+  transition: 1s;
+}
 
 .home1{
   width: 40%;
